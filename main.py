@@ -113,7 +113,7 @@ U = opti.variable(3, N+1);
 ## Cost function ##
 cost = 0;
 for i in range(0, N+1):
-    # lQR-like cost
+    # LQR-like cost
     cost += Q[0, i]**2 + Q[1, i]**2 + Q[2, i]**2;
     cost += .10*(U[0, i]**2 + U[1, i]**2 + U[2, i]**2);
     
